@@ -37,8 +37,15 @@ body {
 nav {
   background-color: var(--dark-grey);
   display: flex;
+  justify-content: space-between;
   width: -webkit-fill-available;
   position: fixed;
+  padding-left: 1em;
+  padding-right: 3em;
+}
+
+nav ul {
+  list-style: none;
 }
 
 #logo {
@@ -278,10 +285,6 @@ footer {
   align-items: center;
 }
 
-.footer-bottoma {
-
-}
-
 .footer-bottom h2 {
   font-family: var(--crete-round);
   font-size: 1em;
@@ -420,5 +423,35 @@ footer {
 
   hr {
     width: 5%;
+  }
+
+  #p1b {
+    width: 50%;
+    font-size: inherit;
+  }
+
+  .article-container {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    gap: 4em;
+    padding: 0 2em;
+    margin-bottom: -40px;
+  }
+
+  .article-container p {
+    font-size: 16px;
+  }
+
+  .article-container img {
+    height: 90%;
+  }
+
+  .sponsors img {
+    height: 4em;
+  }
+
+  .footer-bottom {
+    padding-left: 4em;
+    justify-content: space-around;
   }
 }
