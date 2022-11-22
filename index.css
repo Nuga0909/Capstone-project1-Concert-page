@@ -62,7 +62,7 @@ nav {
 }
 
 #about-logo {
-  height: 6em;
+  height: 6.1em;
 }
 
 .home h3 {
@@ -98,6 +98,7 @@ nav {
   margin: 0;
   font-family: var(--lato);
   letter-spacing: -1px;
+  margin-bottom: 3em;
 }
 
 #p1 {
@@ -109,4 +110,52 @@ nav {
   margin: 0;
   margin-bottom: 1em;
   padding: 3px;
+  margin-top: 1em;
+}
+
+.program {
+  background-image: url(./assets/bg2.png);
+  background-repeat: no-repeat;
+  align-self: stretch;
+  padding: 2em 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.program h3 {
+  margin: 0;
+  color: var(--light-grey);
+  font-family: var(--lato);
+  font-weight: 500;
+}
+
+hr {
+  width: 12%;
+  border: 0 solid #ec5242;
+  border-bottom: 1px solid #ec5242;
+}
+
+.program-list ul {
+  list-style: none;
+  background-color: var(--dark-grey);
+  display: grid;
+  grid-template-columns: 3em 5em auto;
+  align-items: center;
+  padding: 1em;
+  font-family: var(--lato);
+}
+
+.program-head {
+  color: var(--orange-color);
+  font-weight: 600;
+}
+
+.program-body {
+  color: var(--light-grey);
+  font-size: 12px;
+}
+
+.program-list img {
+  height: 2em;
 }
