@@ -38,11 +38,12 @@ nav {
   background-color: var(--dark-grey);
   display: flex;
   width: -webkit-fill-available;
+  position: fixed;
 }
 
 #logo {
   height: 3em;
-  padding: 1em;
+  padding: 9px;
 }
 
 #hamburger {
@@ -73,7 +74,7 @@ nav {
   font-family: var(--lato);
   font-weight: 600;
   letter-spacing: 1px;
-  margin-top: 6em;
+  margin-top: 13em;
 }
 
 .home h2 {
@@ -111,6 +112,7 @@ nav {
   margin-bottom: 1em;
   padding: 3px;
   margin-top: 1em;
+  background-color: rgb(211, 211, 211, 0.5);
 }
 
 #p1b {
@@ -149,6 +151,7 @@ nav {
 .program {
   background-image: url(./assets/bg2.png);
   background-repeat: no-repeat;
+  background-size: cover;
   align-self: stretch;
   padding: 2em 1em;
   display: flex;
@@ -292,4 +295,130 @@ footer {
   font-size: 12px;
   margin: 0;
   padding: 2px;
+}
+
+@media screen and (min-width: 768px) {
+  .upper-header {
+    display: flex;
+    background-color: var(--light-grey);
+    position: fixed;
+    flex-direction: row;
+    justify-content: right;
+    width: -webkit-fill-available;
+    height: 2em;
+    align-items: center;
+  }
+
+  .header-top-img {
+    height: 16px;
+    padding-top: 11px;
+  }
+
+  nav {
+    margin-top: 2em;
+  }
+
+  #logo {
+    padding-left: 3em;
+  }
+
+  .list1 {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-right: 6em;
+  }
+
+  .list2 {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin-left: 20%;
+  }
+
+  .list2 a {
+    text-decoration: none;
+    color: var(--light-grey);
+    font-family: var(--lato);
+    font-size: 12px;
+  }
+
+  .list1 li {
+    padding-right: 1em;
+    font-family: var(--lato);
+    font-size: 11px;
+    color: var(--dark-grey);
+    font-weight: 600;
+  }
+
+  .desktop-nav {
+    display: block;
+    padding-right: 4em;
+  }
+
+  #hamburger {
+    display: none;
+  }
+
+  .home h3 {
+    font-size: inherit;
+  }
+
+  #about-logo {
+    height: 13em;
+  }
+
+  #p1 {
+    width: 50%;
+    font-size: inherit;
+  }
+
+  .home h2 {
+    font-size: 2.5em;
+  }
+
+  #p2 {
+    font-size: larger;
+  }
+
+  .home {
+    padding-bottom: 3em;
+    background-size: cover;
+  }
+
+  .program-list {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    gap: 3px;
+    margin: 2em 8em;
+  }
+
+  .program-list ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .program-list li {
+    padding-bottom: 10px;
+    font-weight: 600;
+  }
+
+  .program-body {
+    text-align: center;
+  }
+
+  .program-head {
+    font-size: large;
+  }
+
+  .program h3 {
+    font-size: x-large;
+    font-weight: 500;
+  }
+
+  hr {
+    width: 5%;
+  }
 }
