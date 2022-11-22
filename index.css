@@ -102,7 +102,7 @@ nav {
 }
 
 #p1 {
-  border: 2px solid beige;
+  border: 2px solid rgb(211, 211, 211, 0.8);
   font-family: var(--lato);
   font-size: small;
   font-weight: 500;
@@ -111,6 +111,39 @@ nav {
   margin-bottom: 1em;
   padding: 3px;
   margin-top: 1em;
+}
+
+#p1b {
+  border: 1px solid #d3d3d3;
+  font-family: var(--lato);
+  font-size: small;
+  font-weight: 500;
+  color: var(--dark-grey);
+  margin: 0;
+  margin-bottom: 1em;
+  padding: 3px;
+  margin-top: 1em;
+  background: rgb(211, 211, 211, 0.6);
+}
+
+#p2b {
+  font-family: var(--lato);
+  font-size: small;
+  font-weight: 500;
+  color: var(--dark-grey);
+  text-align: center;
+}
+
+.divider span {
+  color: var(--orange-color);
+  padding: 0 0.3em;
+  letter-spacing: -1px;
+  font-size: xx-large;
+}
+
+#p2b span {
+  font-weight: 600;
+  text-decoration: underline;
 }
 
 .program {
@@ -158,4 +191,105 @@ hr {
 
 .program-list img {
   height: 2em;
+}
+
+.bottom {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.divider {
+  background-image: url(./assets/last-section-1.jpg);
+  background-repeat: no-repeat;
+  width: -webkit-fill-available;
+  margin-bottom: 100px;
+  text-align: -webkit-center;
+}
+
+.divider h1 {
+  padding: 20px;
+  color: var(--light-grey);
+  font-family: var(--lato);
+  font-size: large;
+}
+
+.article-container {
+  display: flex;
+  flex-direction: column;
+  margin: 1em;
+  margin-bottom: 0;
+}
+
+.article-container h2 {
+  color: var(--dark-grey);
+  font-family: var(--lato);
+}
+
+.article-container h3 {
+  color: var(--dark-grey);
+  font-family: var(--lato);
+  font-size: initial;
+  font-weight: normal;
+}
+
+.article-container p {
+  color: var(--dark-grey);
+  font-family: var(--lato);
+  font-size: 14px;
+}
+
+.footer-top {
+  background-color: var(--dark-grey);
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-top h3 {
+  margin: 0;
+  color: var(--light-grey);
+  font-family: var(--lato);
+  font-weight: 500;
+}
+
+.sponsors {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+
+.sponsors img {
+  height: 2em;
+  padding: 0 1em;
+  padding-top: 1em;
+}
+
+footer {
+  margin-bottom: 4em;
+}
+
+.footer-bottom {
+  display: flex;
+  padding: 1em;
+  align-items: center;
+}
+
+.footer-bottoma {
+
+}
+
+.footer-bottom h2 {
+  font-family: var(--crete-round);
+  font-size: 1em;
+  padding: 0;
+  margin: 0;
+  padding-right: 1em;
+}
+
+.footer-bottom p {
+  font-family: var(--lato);
+  font-size: 12px;
+  margin: 0;
+  padding: 2px;
 }
