@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable arrow-parens */
 /* eslint-disable linebreak-style */
 window.onload = function () {
   const hamburgerButton = document.querySelector('.hamburger');
