@@ -23,13 +23,13 @@ const artists = [
     name: 'Dunsin Oyekan',
     picture: './assets/dunsin.webp',
     role: 'Performing Artist',
-    description: 'Dunsin Oyekan is a Nigerian contemporary Christian, singer-songwriter, producer, multi- instrumentalist and recording artiste popularly referred to as The Eagle. He is the convener of the Code Red Worship Experience.',
+    description: 'Dunsin Oyekan is a Nigerian contemporary Christian, singer-songwriter, producer, multi- instrumentalist and recording artiste popularly referred to as The Eagle.',
   },
   {
     name: 'Travis Greene',
     picture: './assets/travis-greene-bio.webp',
     role: 'Performing Artist',
-    description: 'Celebrated and notably recognized for his quintessential influence both in the gospel music realm and ministry, Travis Greene continues to reach new heights, beyond those that led him to being an inspirational trailblazer in his own right.',
+    description: 'Celebrated and notably recognized for his quintessential influence both in the gospel music realm and ministry, Travis Greene continues to reach new heights.',
   },
   {
     name: 'Mercy Chinwo',
@@ -47,7 +47,13 @@ const artists = [
     name: 'Sinach',
     picture: './assets/sinach-bio.webp',
     role: 'Performing Artist',
-    description: 'Known for writing music and leading worship for over 30 years, Sinach is a multi-award winning Gospel Singer-songwriter and has written some of the most sung and streamed songs in our time, such as Holy Are You Lord, I Know Who I Am, Simply Devoted, Way Maker, There’s an Overflow, Greatest Lord and many more.',
+    description: 'Known for writing music and leading worship for over 30 years, Sinach is a multi-award winning Gospel Singer-songwriter and has written some of the most sung and streamed songs in our time, such as Holy Are You Lord, I Know Who I Am, Simply Devoted, Way Maker.',
+  },
+  {
+    name: 'Phil Thompson',
+    picture: './assets/Phil_Thompson.webp',
+    role: 'Performing Artist',
+    description: 'Though Phil has been singing since childhood, it wasn’t until he was 30 years old that he discovered his gifting in writing music. Not only did he establish himself as the writer behind Ashmont Hill’s hits, but he’s also inked songs for a multitude of artistes.',
   },
 ];
 
@@ -61,51 +67,55 @@ document.addEventListener('DOMContentLoaded', (event) => {
   const artistsUl = document.createElement('ul');
   artistsUl.className = 'artists-box';
   artistSection.append(artistsH3, artistsHr, artistsUl);
-  for (let i = 0; i <= 5; i += 1) {
+  for (let i = 0; i < 6; i += 1) {
     const artistsLi = document.createElement('li');
     if (i > 1) {
       artistsLi.className = 'desktop-only';
     }
-    console.log(artists[i].name);
-    // artistsUl.appendChild(artistsLi);
-    // const artistsDiv = document.createElement('div');
-    // artistsLi.appendChild(artistsDiv);
-    // const artistsUlMini = document.createElement('ul');
-    // artistsUlMini.className = 'artist-parts';
-    // artistsDiv.appendChild(artistsUlMini);
-    // const artistImageLi = document.createElement('li');
-    // artistImageLi.className = 'artist-img';
-    // artistsUlMini.appendChild(artistImageLi);
-    // const artistImage = document.createElement('img');
-    // artistImage.className = 'artist-pic';
-    // artistImage.src = artists[i].picture;
-    // artistImage.alt = 'artist-image';
-    // artistImageLi.appendChild(artistImage);
-    // const artistTextsLi = document.createElement('li');
-    // artistTextsLi.className = 'artist-text-box';
-    // artistsUlMini.appendChild(artistTextsLi);
+    artistsUl.appendChild(artistsLi);
+    const artistsDiv = document.createElement('div');
+    artistsLi.appendChild(artistsDiv);
+    const artistsUlMini = document.createElement('ul');
+    artistsUlMini.className = 'artist-parts';
+    artistsDiv.appendChild(artistsUlMini);
+    const artistImageLi = document.createElement('li');
+    artistImageLi.className = 'artist-img';
+    artistsUlMini.appendChild(artistImageLi);
+    const artistImage = document.createElement('img');
+    artistImage.className = 'artist-pic';
+    artistImage.src = artists[i].picture;
+    artistImage.alt = 'artist-image';
+    artistImageLi.appendChild(artistImage);
+    const artistTextsLi = document.createElement('li');
+    artistTextsLi.className = 'artist-text-box';
+    artistsUlMini.appendChild(artistTextsLi);
 
-    // const artistDetailsUl = document.createElement('ul');
-    // artistDetailsUl.className = 'artist-details';
-    // artistTextsLi.appendChild(artistDetailsUl);
+    const artistDetailsUl = document.createElement('ul');
+    artistDetailsUl.className = 'artist-details';
+    artistTextsLi.appendChild(artistDetailsUl);
 
-    // const artistNameLi = document.createElement('li');
-    // artistNameLi.className = 'artist-name';
-    // artistDetailsUl.appendChild(artistNameLi);
-    // artistNameLi.innerText = artists[i].name;
+    const artistNameLi = document.createElement('li');
+    artistNameLi.className = 'artist-name';
+    artistDetailsUl.appendChild(artistNameLi);
+    artistNameLi.innerText = artists[i].name;
 
-    // const artistRoleLi = document.createElement('li');
-    // artistRoleLi.className = 'artist-title';
-    // artistDetailsUl.appendChild(artistRoleLi);
-    // artistRoleLi.innerText = artists[i].role;
+    const artistRoleLi = document.createElement('li');
+    artistRoleLi.className = 'artist-title';
+    artistDetailsUl.appendChild(artistRoleLi);
+    artistRoleLi.innerText = artists[i].role;
 
-    // const artistLine = document.createElement('hr');
-    // artistLine.className = 'artist-line';
-    // artistDetailsUl.appendChild(artistLine);
+    const artistLine = document.createElement('hr');
+    artistLine.className = 'artist-line';
+    artistDetailsUl.appendChild(artistLine);
 
-    // const artistDescrLi = document.createElement('li');
-    // artistDescrLi.className = 'artist-description';
-    // artistDetailsUl.appendChild(artistDescrLi);
-    // artistDescrLi.innerText = artists[i].description;
+    const artistDescrLi = document.createElement('li');
+    artistDescrLi.className = 'artist-description';
+    artistDetailsUl.appendChild(artistDescrLi);
+    artistDescrLi.innerText = artists[i].description;
   }
+
+  const btnMore = document.createElement('button');
+  btnMore.innerText = 'MORE';
+  btnMore.className = 'btn-more';
+  artistSection.append(btnMore);
 });
