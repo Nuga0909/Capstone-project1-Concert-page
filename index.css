@@ -344,6 +344,69 @@ footer {
   padding: 2px;
 }
 
+/* artists */
+
+.performers {
+  display: grid;
+  background-color: white;
+}
+
+.performers .main-title {
+  color: #272a31;
+  text-align: center;
+  font-size: larger;
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-left: 0;
+  margin-bottom: 0.5rem;
+}
+
+.performers .artists-line {
+  width: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+  border: none;
+  border-bottom: 2px solid #ec5242;
+}
+
+.performers .artist-parts {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin: 0.75rem 0.75rem 0 0.75rem;
+}
+
+.performers .artist-parts .artist-text-box {
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+.performers .artist-parts .artist-name {
+  font-weight: bold;
+}
+
+.performers .artist-parts .artist-title {
+  font-style: italic;
+  font-weight: bold;
+  font-size: small;
+  color: #ec5242;
+}
+
+.performers .artist-parts .artist-line {
+  width: 40%;
+  margin-left: 0;
+  border: none;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.performers .artist-parts .artist-description {
+  color: black;
+  font-size: small;
+}
+
+/* artists */
+
 @media screen and (min-width: 768px) {
   .upper-header {
     display: flex;
