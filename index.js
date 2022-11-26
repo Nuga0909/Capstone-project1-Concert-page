@@ -1,6 +1,5 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable arrow-parens */
 /* eslint-disable linebreak-style */
+// eslint-disable-next-line func-names
 window.onload = function () {
   const hamburgerButton = document.querySelector('.hamburger');
   const mobileMenu = document.querySelector('.mobile-menu');
@@ -11,7 +10,7 @@ window.onload = function () {
 
   const mobileMenuLinks = document.querySelectorAll('.mobile-nav');
 
-  mobileMenuLinks.forEach(element => {
+  mobileMenuLinks.forEach((element) => {
     element.addEventListener('click', () => {
       hamburgerButton.classList.remove('active');
       mobileMenu.classList.remove('active');
@@ -59,6 +58,7 @@ const artists = [
   },
 ];
 
+// eslint-disable-next-line no-unused-vars
 document.addEventListener('DOMContentLoaded', (event) => {
   const artistSection = document.getElementById('performersId');
   const artistsH3 = document.createElement('h3');
