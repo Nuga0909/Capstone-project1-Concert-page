@@ -705,8 +705,8 @@ hr#linnn {
   }
 
   .footer-bottom {
-    padding-left: 10em;
-    justify-content: flex-start;
+    align-content: center;
+    padding: 1em 7em;
   }
 
   .btn-more {
@@ -772,5 +772,9 @@ hr#linnn {
 
   .sum-head p {
     padding-bottom: 2em;
+  }
+
+  .footer-bottom p {
+    color: var(--light-grey);
   }
 }
