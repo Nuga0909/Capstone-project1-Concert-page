@@ -1,5 +1,3 @@
-/* eslint-disable linebreak-style */
-// eslint-disable-next-line func-names
 window.onload = function () {
   const hamburgerButton = document.querySelector('.hamburger');
   const mobileMenu = document.querySelector('.mobile-menu');
