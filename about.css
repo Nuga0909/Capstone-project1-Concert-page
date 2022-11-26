@@ -104,7 +104,7 @@ nav ul {
   padding: 1em;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
 }
 
 #about-logo {
@@ -122,8 +122,9 @@ nav ul {
 .home h1 {
   color: var(--orange-color);
   font-family: var(--crete-round);
-  font-size: 33px;
+  font-size: 30px;
   margin: 0;
+  text-align: -webkit-center;
 }
 
 .home h2 {
@@ -170,6 +171,7 @@ nav ul {
   margin-bottom: 1em;
   padding: 3px;
   margin-top: 1em;
+  text-align: center;
   background: rgb(211, 211, 211, 0.6);
 }
 
@@ -313,14 +315,11 @@ hr {
   padding-top: 1em;
 }
 
-footer {
-  margin-bottom: 4em;
-}
-
 .footer-bottom {
   display: flex;
   padding: 1em;
   align-items: center;
+  justify-content: center;
 }
 
 .footer-bottom h2 {
@@ -328,7 +327,7 @@ footer {
   font-size: 1em;
   padding: 0;
   margin: 0;
-  padding-right: 5em;
+  padding-right: 3em;
 }
 
 .footer-bottom p {
@@ -610,7 +609,7 @@ hr#linnn {
   }
 
   .home h3 {
-    font-size: 38px;
+    display: none;
   }
 
   #about-logo {
@@ -618,7 +617,8 @@ hr#linnn {
   }
 
   .home h1 {
-    font-size: 4em;
+    font-size: 44px;
+    padding-top: 2em;
   }
 
   #p1 {
@@ -721,7 +721,6 @@ hr#linnn {
     display: grid;
     grid-template-columns: 45% 45%;
     gap: 2em;
-    margin: 0 5em;
   }
 
   img.artist-pic {
@@ -765,5 +764,17 @@ hr#linnn {
     display: flex;
     margin-bottom: 5em;
     margin-top: 3em;
+  }
+
+  .sum-head h2 {
+    padding-top: 20px;
+  }
+
+  .sum-head p {
+    padding-bottom: 2em;
+  }
+
+  .footer-bottom p {
+    color: var(--light-grey);
   }
 }

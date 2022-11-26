@@ -1,17 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Capstone Project - Concert Page</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.cdnfonts.com/css/cocogoose" rel="stylesheet" />
     <script src="index.js"></script>
-</head>
-<body>
-  <header>
-    
-  </header>
-    
-</body>
+
+    <title>Capstone Project - Concert Page</title>
+  </head>
+  <body>
+    <header>
+      <div class="mobile-menu">
+        <ul class="list3">
+          <li id="close" class="mobile-nav">
+            <img src="./assets/Icon.png" alt="close" id="close-button" />
+          </li>
+          <li class="mobile-nav"><a href="index.html">Home</a></li>
+          <li class="mobile-nav"><a href="about.html">About</a></li>
+          <li class="mobile-nav"><a href="#">Program</a></li>
+          <li class="mobile-nav"><a href="#">Join</a></li>
+          <li class="mobile-nav"><a href="#">Sponsor</a></li>
+          <li class="mobile-nav"><a href="#">News</a></li>
+        </ul>
+      </div>
+      <div class="upper-header">
+        <ul class="list1">
+          <li>
+            <img
+              src="./assets/New folder/facebook.png"
+              alt="facebook-link"
+              class="header-top-img"
+            />
+          </li>
+          <li>
+            <img
+              src="./assets/New folder/twitter.png"
+              alt="twitter-link"
+              class="header-top-img"
+            />
+          </li>
+          <li><p>English</p></li>
+          <li><p>My Page</p></li>
+          <li><p>Logout</p></li>
+        </ul>
+      </div>
+      <nav>
+        <a href="index.html"
+          ><img
+            src="./assets/aboutLOGO.png"
+            alt="logo"
+            id="logo"
+            class="desktop-nav"
+        /></a>
+        <ul class="list2">
+          <li class="desktop-nav"><a href="about.html">About</a></li>
+          <li class="desktop-nav"><a href="#">Program</a></li>
+          <li class="desktop-nav"><a href="#">Join</a></li>
+          <li class="desktop-nav"><a href="#">Sponsor</a></li>
+          <li class="desktop-nav"><a href="#">News</a></li>
+          <li class="desktop-nav"><button>TE Campaign</button></li>
+          <li class="hamburger">
+            <img
+              src="./assets/New folder/ham.png"
+              alt="hamburger"
+              id="hamburger"
+            />
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="home">
+      <h3>"Hello! Sharing world"</h3>
+      <h1>THE EXPERIENCE<br />GOSPEL CONCERT<br />2022</h1>
+      <p id="p1">
+        Birthed by a God-inspired vision, ‘The Experience’ provides a platform
+        where all can raise their hearts, hands and voices together as one in
+        unfettered praise to the Almighty irrespective of tribe, denomination,
+        creed or language.
+      </p>
+      <h2>2022.12.10(FRI) ~ 11(SAT)</h2>
+      <p id="p2">@ tafawa balewa square, onikan, lagos</p>
+    </section>
+    <section class="program">
+      <h3>Main Program</h3>
+      <hr />
+      <div class="program-list">
+        <ul class="prog-1">
+          <li>
+            <img src="./assets/pg 4.png" alt="concert clipart" id="im1" />
+          </li>
+          <li class="program-head">Concert</li>
+          <li class="program-body">
+            The concert features exceptional gospel music from some of the most
+            celebrated, international and indigenous recording artistes of our
+            time.
+          </li>
+        </ul>
+        <ul class="prog-2">
+          <li><img src="./assets/pg 3clip.png" alt="Sermons clipart" /></li>
+          <li class="program-head">Sermons</li>
+          <li class="program-body">
+            A variety of comedy performances will feature, as well as goodwill
+            messages and intercessory prayers.
+          </li>
+        </ul>
+        <ul class="prog-3">
+          <li><img src="assets\pg 1.png" alt="connect clipart" /></li>
+          <li class="program-head">Connect</li>
+          <li class="program-body">
+            Have time to connect with different people from all over the
+            country, all under the banner of Christ Jesus
+          </li>
+        </ul>
+        <ul class="prog-4">
+          <li><img src="assets\pg 2.png" alt="Exhibition clipart" /></li>
+          <li class="program-head">Exhibition</li>
+          <li class="program-body">
+            Appreciate different works of art and inspiration from the body of
+            Christ
+          </li>
+        </ul>
+        <ul class="prog-5">
+          <li><img src="assets\pg 4.png" alt="Learn clipart" /></li>
+          <li class="program-head">Learn</li>
+          <li class="program-body">
+            Learn from different artists and theirworks of art and inspiration
+            from the body of Christ
+          </li>
+        </ul>
+      </div>
+      <button class="button-mob">Join THE EXPERIENCE 2022</button>
+      <p class="desktop-p">SEE THE WHOLE PROGRAM</p>
+    </section>
+    <section class="performers" id="performersId">
+      <!-- This section is created dynamically -->
+    </section>
+    <footer class="desktop-only">
+      <div class="footer-top">
+        <h3>Partners</h3>
+        <hr />
+        <div class="sponsors">
+          <img src="./assets/sp1.jpg" alt="sponsor1" />
+          <img src="./assets/sp2.jpg" alt="sponsor2" />
+          <img src="./assets/sp3.png" alt="sponsor3" />
+          <img src="./assets/sp4.png" alt="sponsor4" />
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <img
+            src="./assets/aboutLOGO.png"
+            alt="logo"
+            id="logo"
+            class="desktop-nav"
+        />
+        <div class="footer-bottoma">
+          <p>2022 Microverse Capstone Project.Some Rights Reserved.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis dolorum at sit consequatur hic dolorem aperiam blanditiis expedita natus, dolore ab eius qui veritatis. Exercitationem consequuntur delectus saepe dolores minus.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
