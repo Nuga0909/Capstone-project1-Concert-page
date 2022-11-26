@@ -256,7 +256,7 @@ hr {
   background-image: url(./assets/last-section-1.jpg);
   background-repeat: no-repeat;
   width: -webkit-fill-available;
-  margin-bottom: 100px;
+  margin-bottom: 15px;
   text-align: -webkit-center;
 }
 
@@ -429,6 +429,115 @@ li.artist-description {
   background-color: var(--orange-color);
   color: var(--light-grey);
   border: none;
+}
+
+.sum-head h2 {
+  font-family: var(--lato);
+  color: var(--dark-grey);
+  font-size: larger;
+  width: 60%;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.sum-head,
+.sum-body,
+.pic-p1,
+.pic-p2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sum-head p {
+  font-family: var(--lato);
+  color: var(--dark-grey);
+  font-size: smaller;
+  width: 70%;
+  text-align: center;
+}
+
+#sum-logo {
+  width: 60%;
+  border: 1px solid rgb(211, 211, 211, 0.8);
+  padding: 1em 3em;
+}
+
+.sum-body h2 {
+  font-family: var(--lato);
+  color: var(--dark-grey);
+  font-size: larger;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.sum-body p {
+  font-family: var(--lato);
+  color: var(--dark-grey);
+  font-size: smaller;
+  width: 80%;
+  text-align: center;
+}
+
+.pic-p1 {
+  background-image: url(./assets/TE14.webp);
+  width: 20em;
+  height: 15em;
+  background-size: cover;
+  background-color: rgb(73, 27, 6, 0.8);
+  background-blend-mode: overlay;
+  margin: 1em;
+}
+
+.pic-p1 h3 {
+  color: var(--light-grey);
+  font-size: 40px;
+  font-family: var(--lato);
+  padding-top: 20px;
+  padding-bottom: 0;
+  margin: 0;
+  margin-top: 42px;
+}
+
+.pic-p1 p {
+  color: var(--light-grey);
+  font-size: 17px;
+  font-family: var(--lato);
+  font-weight: 600;
+}
+
+.pic-p2 {
+  background-image: url(./assets/The-Experience-20200-lagos.jpg);
+  width: 20em;
+  height: 15em;
+  background-size: cover;
+  background-color: rgb(73, 27, 6);
+  background-blend-mode: overlay;
+  margin: 1em;
+}
+
+.pic-p2 h3 {
+  color: var(--light-grey);
+  font-size: 40px;
+  font-family: var(--lato);
+  padding-top: 20px;
+  padding-bottom: 0;
+  margin: 0;
+  margin-top: 42px;
+}
+
+.pic-p2 p {
+  color: var(--light-grey);
+  font-size: 17px;
+  font-family: var(--lato);
+  font-weight: 600;
+}
+
+hr#linnn {
+  width: -webkit-fill-available;
+  border: 0 solid #d3d3d3;
+  border-bottom: 1px solid #d3d3d3;
+  margin: 2em 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -635,5 +744,11 @@ li.artist-description {
 
   .button-mob {
     display: none;
+  }
+
+  .cont {
+    display: flex;
+    margin-bottom: 5em;
+    margin-top: 3em;
   }
 }
