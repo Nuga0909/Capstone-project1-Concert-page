@@ -144,13 +144,12 @@ nav ul {
 
 #p2 {
   text-transform: capitalize;
-  font-style: italic;
   color: var(--dark-grey);
   font-size: smaller;
   margin: 0;
   font-family: var(--lato);
-  letter-spacing: -1px;
   margin-bottom: 3em;
+  font-weight: 600;
 }
 
 #p1 {
@@ -420,6 +419,18 @@ li.artist-description {
   display: none;
 }
 
+.button-mob {
+  padding: 27px;
+  width: -webkit-fill-available;
+  margin: 15px 15px;
+  cursor: pointer;
+  font-family: var(--lato);
+  font-size: large;
+  background-color: var(--orange-color);
+  color: var(--light-grey);
+  border: none;
+}
+
 @media screen and (min-width: 768px) {
   .upper-header {
     display: flex;
@@ -609,5 +620,20 @@ li.artist-description {
 
   .wit {
     color: var(--light-grey);
+  }
+
+  #mobile1,
+  #mobile2 {
+    display: none;
+  }
+
+  #desktop1 {
+    background-color: var(--dark-grey);
+    height: 7em;
+    padding-top: 2em;
+  }
+
+  .button-mob {
+    display: none;
   }
 }

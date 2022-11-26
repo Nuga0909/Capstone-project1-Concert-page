@@ -14,7 +14,6 @@ window.onload = function () {
     element.addEventListener('click', () => {
       hamburgerButton.classList.remove('active');
       mobileMenu.classList.remove('active');
-      // NAVBAR_LOGO.classList.remove("active");
     });
   });
 };
