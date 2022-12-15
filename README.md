@@ -61,7 +61,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://nuga0909.github.io/HTML-CSS-JavaScript-capstone-project---Concert-page/)
+- [Live Demo Link](https://nuga0909.github.io/Capstone-project1-Concert-page/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -72,7 +72,7 @@
 To get a local copy up and running, follow these steps:
 
 ```sh
-  https://github.com/Nuga0909/HTML-CSS-JavaScript-capstone-project---Concert-page.git
+  https://github.com/Nuga0909/Capstone-project1-Concert-page.git
 ```
 
 ### Prerequisites
